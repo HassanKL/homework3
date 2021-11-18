@@ -1,0 +1,87 @@
+.navholder {
+  //   position: fixed;
+  left: 10px;
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    p {
+      //   margin: auto 0;
+    }
+  }
+}
+
+.bars {
+  display: none;
+}
+
+.bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: black;
+  height: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  //   margin-left: 850px;
+}
+
+.bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bars.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bars.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.links {
+  display: flex;
+  background-color: black;
+  height: 50px;
+  overflow: hidden;
+  margin-left: -10px;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: height 0.4s, opacity 0.4s ease-in;
+
+  img {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.links.active {
+  height: 100vh;
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .bars {
+    display: block;
+  }
+
+  .links {
+    height: 0px;
+    opacity: 0;
+    flex-direction: column;
+  }
+
+  .image-holder .view {
+    display: flex;
+  }
+}

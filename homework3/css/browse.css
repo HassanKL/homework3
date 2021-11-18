@@ -1,0 +1,116 @@
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.images .comp {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: black;
+  height: 350px;
+  width: 1000px;
+  margin-left: 15px;
+}
+.images .comp .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+  padding: 10px;
+}
+.images .comp .button-holder .button {
+  background-color: orangered;
+  border-radius: 35px;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+.images .comp .button-holder .view {
+  display: none;
+}
+.images .comp .button-holder:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.images .comp .image-holder {
+  height: 200px;
+  width: 270px;
+  background-image: url(../images/drumKit1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.images .comp .image-holder .button {
+  background-color: orangered;
+  border-radius: 35px;
+  width: 128px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.images .comp .image-holder .view {
+  display: none;
+}
+.images .comp .image-holder:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.images .comp p {
+  text-align: center;
+  margin-left: 450px;
+  margin-top: -175px;
+}
+.images .comp img {
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .image-holder .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: royalblue;
+  }
+
+  .button-holder .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}

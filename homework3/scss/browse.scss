@@ -1,0 +1,97 @@
+.images {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .comp {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: black;
+    // justify-content: center;
+    // background-color: purple;
+    height: 350px;
+    width: 1000px;
+    margin-left: 15px;
+    // display: flex;
+
+    .button-holder {
+      display: flex;
+      // justify-content: space-evenly;
+      padding-top: 15px;
+      padding: 10px;
+      // background-color: green;
+
+      .button {
+        background-color: orangered;
+        border-radius: 35px;
+        width: 128px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .view {
+        display: none;
+      }
+    }
+
+    .button-holder:hover .view {
+      display: flex;
+    }
+
+    .image-holder {
+      height: 200px;
+      width: 270px;
+      background-image: url(../images/drumKit1.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .button {
+        background-color: orangered;
+        border-radius: 35px;
+        width: 128px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .view {
+        display: none;
+      }
+    }
+
+    .image-holder:hover .view {
+      display: flex;
+    }
+
+    p {
+      text-align: center;
+      margin-left: 450px;
+      margin-top: -175px;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      border-style: solid;
+      border-radius: 5px;
+      border-color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .image-holder .view {
+    display: flex;
+    background-color: royalblue;
+  }
+
+  .button-holder .view {
+    display: flex;
+  }
+}
